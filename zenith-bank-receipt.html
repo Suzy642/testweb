@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Zenith transfer
+  </title>
+  <style>
+    body {
+      padding-top: 50px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .head {
+      display: grid;
+      grid-template-columns: 60px 190px 100px;
+      column-gap: 5px;
+      background-color: red;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      font-weight: bolder;
+      font-size: 10px;
+    }
+    .ger {
+      padding-top: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .top-img {
+      width: 40px;
+      margin-bottom: px;
+    }
+    .body-con {
+      border: 2px solid lightgray;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-right: 10px;
+    }
+    @media (min-width: 400px) {
+      .body-con{
+        width: 300px;
+      }
+    }
+    .head2 {
+      font-size: 8px;
+      display: grid;
+      grid-template-columns: 140px 100px;
+      column-gap: 30px;
+      color: gray;
+      text-align: top;
+      margin-left: 37px;
+      margin-bottom: 8px;
+    }
+    .parr {
+      
+    }
+    .sec-img {
+      width: 20px;
+      margin-bottom: -3px;
+    }
+    .ttop {
+      font-size: 10px;
+      margin-left: 30px;
+      margin-top: 5px;
+      color: white;
+      background-color: red;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+    .place {
+      font-size: 10px;
+      font-weight: bold;
+      color: black;
+    }
+    .color {
+      color: gray;
+      margin-left: 5px;
+      font-size: 10px;
+    }
+    .insert2 {
+      width: 180px;
+      color: gray;
+      border: none;
+      font-size: 8px;
+    }
+    .insert {
+      width: 160px;
+      color: gray;
+      margin-left: 10px;
+      font-size: 9px;
+    }
+    .contain {
+      margin-left: 16px;
+      margin-top: 10px;
+      margin-bottom: -4px;
+    }
+    .dis {
+      margin-left: 30px;
+      margin-top: 5px;
+      color: gray;
+      font-size: 10px;
+    }
+    .line {
+      margin-left: 16px;
+      color: lightgray;
+      margin-bottom: -5px;
+    }
+    .foot {
+      font-size: 10px;
+      color: white;
+      background-color: red;
+     margin-left: 20px;
+     padding: 10px 20px;
+     margin-top: 15px;
+     margin-bottom: -22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div>
+      
+    </div>
+    <div class="ger">
+      <b>
+        Transfer Receipt
+      </b>
+    </div>
+    <div>
+      <img class="top-img" src="logos/zenith22.png">
+    </div>
+  </div>
+  <div class="body-con" id="form">
+    <div class="head2">
+      <div class="ger">
+        TRANSACTION RECEIPT
+      </div>
+      <div class="parr">
+        <img class="sec-img" src="logos/zenith.png"> <span style="margin-top: -5px; font-weight: bold;">Zenith Bank</span>
+      </div>
+    </div>
+      <div>
+        <span class="ttop" id="first-info">Wednesday, Febuary 14 2024 12:00 PM</span>
+      </div>
+      <div class="contain">
+        <span class="place">Transaction Type:</span><span class="color">Inter-Bank Transfer
+        </span>
+      </div>
+      <div class="line">
+        _________________________________
+      </div>
+    <div class="contain">
+      <label class="place">Transaction Date:</label><span class="insert" id="second-info">14-Sep-2024 12:00 PM</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <label class="place">Debit Account:</label><span class="insert" id="third-info">1234****901</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <label class="place">Credit Account:</label><span class="insert" id="four-info">12345678901</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <label class="place">
+        Beneficiary:
+      </label><span class="insert2" id="five-info">Dee Jay</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <label class="place">
+        Bank:
+      </label><span class="insert" id="six-info">Access Bank Plc</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <label class="place">
+        Narration:
+      </label><span class="insert" id="seven-info">Bills</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="contain">
+      <span class="place">Status:</span><span class="color">Successful</span>
+    </div>
+    <div class="line">_________________________________
+    </div>
+    <div class="contain">
+      <label class="place">Amount:</label><span class="insert" id="eight-info">N1,000.00</span>
+    </div>
+    <div class="line">
+      _________________________________
+    </div>
+    <div class="dis">
+      <span class="place">Disclaimer:</span>Your transaction has been successfully processed. Note, however, that completion of any transfer may be affected by other factor including but not limited to transmission errors incomplete information, fluctuations on the network/internet, interruptions, glitch, delayed information or other matters beyond the Bank's control which may impact on this transaction and for any which the Bank will not be liable. All transactions are subject to Zenith Bank confirmation and fraud proof verification.
+    </div>
+    <div class="foot">
+      For any other assistance, kindly contact us on<br>zenith
+    </div>
+  </div>
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+ 
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+  
+  
+  </script>
+</body>
+
+</html>

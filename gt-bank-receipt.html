@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Gtb transfer
+  </title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-right: 0px;
+      padding-top: 30px;
+    }
+    .gtop {
+      width: 50px;
+      margin-left: 250px;
+    }
+    .gtp {
+      font-size: 5px;
+      margin-left: 219px;
+      margin-top: 8px;
+      margin-bottom: -4px;
+    }
+    .rc {
+      font-size: 5px;
+      margin-left: 258px;
+    }
+    .transfer {
+      font-size: 9px;
+      margin-left: 90px;
+      margin-bottom: -18px;
+    }
+    .line {
+      color: #5A5959;
+      margin-left: 20px;
+    }
+    .color {
+      color: #E16A0D;
+      font-size: 9px;
+      font-weight: bold;
+    }
+    .input {
+      font-size: 7px;
+      border: none;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .ht {
+      margin-left: 120px;
+      margin-top: 50px;
+      font-size: 9px;
+      margin-bottom: 4px;
+    }
+    .htp {
+      font-size: 9px;
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+    .end {
+      font-size: 7px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img class="gtop" src="logos/gtb.png">
+    <p class="gtp">
+      Guarantee Trust Bank plc
+    </p>
+    <p class="rc">
+      RC 152101
+    </p>
+  </div>
+  <div class="transfer">
+    Transaction Receipt
+  </div>
+  <div class="line">
+    ____________________________
+  </div>
+  <div>
+    <label class="color">
+      Transaction Date:
+    </label><span class="input" id="first-info">14 Feb 2024, 12:00 PM GMT+1</span>
+  </div>
+  <div>
+    <label class="color">
+      Reference Number:
+    </label><span class="input">
+  REF: 90148090500000013000</span>
+  </div>
+  <div>
+    <label class="color">
+      Sender:
+    </label><span class="input" id="second-info">Dee Jay</span>
+  </div>
+  <div>
+    <label class="color">
+      Transaction Amount:
+    </label><span class="input" id="third-info">1,000.00 </span><span class="input">NGN</span>
+  </div>
+  <div>
+    <label class="color">
+      Transaction in Words:
+    </label><span class="input" id="four-info">One Thousand Naira Only</span>
+  </div>
+  <div>
+    <label class="color">
+      Transaction Type:
+    </label><span class="input">To GTBank</span>
+  </div>
+  <div>
+    <label class="color">Receiver:</label><span class="input" id="five">Dee Jay</span>
+  </div>
+  <div>
+    <label class="color">
+      Account Number:
+    </label><span class="input" id="six-info">12344678901</span>
+  </div>
+  <div>
+    <label class="color">
+      Receiver Bank:
+    </label><span class="input" id="seven-info">Access Bank Plc</span>
+  </div>
+  <div>
+    <label class="color">
+      Remark:
+    </label><span class="input" id="eight-info">Bills</span>
+  </div>
+  <div>
+    <h6 class="ht">
+      Disclaimer
+    </h6>
+    <div class="end">
+      Your transfer has been successful and the beneficiary's account will be credited. However this does not serve as confirmation of credit into the beneficiary's account. Due to the nature of the internet, transaction maybe subject to interruption, transmission blackout, delayed transmission and incorrect data transmission. The bank is not liable for malfunctions in communication facilities not with it's that may affect the accuracy or timeless messages and transactions you sent. All transactions are subject to verification and our normal fraud checks
+    </div>
+    <h6 class="htp">
+      Generated from GTWorld
+    </h6>
+  </div>
+ <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+
+  </script>
+</body>
+
+</html>

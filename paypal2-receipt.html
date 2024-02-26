@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    PayPal receipt
+  </title>
+  <style>
+  body {
+    padding-top: 160px;
+    width: 300px;
+  }
+  @media (min-width: 400px){
+    body {
+      width: 300px;
+    }
+  }
+  .first {
+    color: #030B5C;
+    font-size: 19px;
+    font-weight: 500px;
+    margin-left: 20px;
+  }
+  .first2 {
+    color: #030B5C;
+    font-size: 19px;
+    font-weight: 500px;
+    margin-left: 70px;
+  }
+  .sender {
+    color: #030B5C;
+    font-size: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  .we {
+    color: #030B5C;
+    font-size: 10px;
+    margin-left: 30px;
+  }
+  .money {
+    color: #030B5C;
+    font-size: 10px;
+    margin-left: 24px;
+  }
+  .case {
+    color: #030B5C;
+    font-size: 10px;
+    margin-left: 80px;
+  }
+  button {
+    background-color: #000E9B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .more {
+     color: #000E9B;
+     font-weight: bold;
+     margin-left: 110px;
+     margin-top: 30px;
+  }
+  </style>
+</head>
+<body>
+<div class="first">
+  You've sent &dollar;<span class="amount" id="first-info">1,000.00</span> USD</div>
+  <div class="first2">to <span class="name" id="second-info">Dee Jay</span>
+</div>
+<center class="sender" id="third-info">"Dee Jay"</center>
+<div class="we">
+  We'll let 
+  <span id="four-info">
+    Dee Jay
+    </span> 
+    know right away that you sent
+  </div>
+  <div class="money">
+    money. You can see the details in your Activity in </div>
+  <div class="case">
+    case you need them later.
+</div>
+<button>Done</button>
+<div class="more">
+  Send More
+</div>
+
+ <script>
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info'); 
+  const fourInfo = localStorage.getItem('four-info'); 
+
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+ </script>
+</body>
+
+</html>

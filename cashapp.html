@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    cashapp payment
+  </title>
+  <style> 
+  body {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    width: 260px;
+  }
+  @media (min-width: 400px){
+    body {
+      width: 260px;
+    }
+  }
+  .top {
+    display: grid;
+    grid-template-columns: 40px 60px;
+    grid-gap: 160px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+  }
+  .x {
+    font-weight: bolder;
+    color: black;
+  }
+  .dot {
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+  }
+  .logo {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+  .name {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    }
+    .text {
+      color: gray;
+      font-size: 15px;
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+    .tag {
+      font-size: 15px;
+      color: gray;
+      width: 160px;
+      border: none;
+    }
+    .amount {
+      font-size: 35px;
+      font-weight: bolder;
+      color: black;
+      border: none;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    .today {
+      color: gray;
+      font-style: 16px;
+      margin-left: 60px;
+    }
+    .time {
+      color: gray;
+      font-size: 16px;
+      }
+      .complete {
+        padding: 10px 6px;
+        background-color: #00CE3C;
+        width: 200px;
+        color: white;
+        border-radius: 30px;
+        margin-top: 80px;
+        margin-left: 20px;
+      }
+      .tt {
+        margin-left: 40px;
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="x">
+      
+    </div>
+    <div class="dot">
+      ...
+    </div>
+  </div>
+  <div>
+     <span class="logo" id="first-info">DJ</span>
+  </div>
+  <div class="name">
+   <span class="name" id="second-info">Dee Jay</span>
+  </div>
+  <div class="text">
+    Payment to <span class="tag" id="third-info">$Deejay</span>
+  </div>
+   <center class="amount" id="four-info">&dollar;1,000.00</center>
+  <div class="today">
+    Today at <span class="time" id="five-info">12:00 PM</span>
+  </div>
+  <div class="complete">
+    <span class="tt">&#x2714 Completed</span>
+  </div>
+  
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  </script>
+
+</body>
+</html>

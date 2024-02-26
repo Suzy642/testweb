@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    UBA transfer
+  </title>
+  <style>
+    body {
+     margin-right: -25880px;
+     }
+     .y2 {
+       background-image:url(logos/rr.png);
+       background-repeat: no-repeat;
+       background-position-x: 50px;
+       background-position: left 60px bottom 60px;
+       background-size: 200px;
+     }
+   .heading {
+     display: grid;
+     grid-template-columns: 60px 220px 80px;
+     column-gap: 4px;
+     align-items: center;
+     background-color: #D81818;
+     color: white;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-right: 10px;
+     margin: -10px -10px;
+     opacity: 1;
+   }
+   .logo {
+     width: 40px;
+     border-radius: 15px;
+   }
+   .td {
+     padding-top: 15px;
+     font-weight: bold;
+     font-size: 19px;
+     margin-bottom: -13px;
+   }
+    .gap {
+      margin-left: 3px;
+      margin-bottom: 3px;
+    }
+    .p {
+     margin-top: 2px;
+     margin-bottom: 2px;
+     font-weight: bold;
+     font-size: 15px;
+   }
+   span {
+     margin-left: 5px;
+     color: #333333;
+     font-size: 12px;
+     font-weight: 100px;
+   }
+   .container {
+     display: ;
+     grid-template-columns: ;
+   }
+   .b {
+     margin-top: 2px;
+     margin-bottom: 2px;
+     font-weight: bold;
+     font-size: 15px;
+   }
+   .line {
+     color: #A2A2A2;
+   }
+  </style>
+</head>
+
+<body>
+  <div class="y2">
+     <div class="back">
+     </div>
+      <div class="heading">
+     <div>
+     
+     </div>
+     <div>
+       Transaction receipt
+    </div>
+     <div>
+      <img class="logo" src="logos/uba.png">
+     </div>
+   </div>
+    <div class="td">
+     Transaction Details :-
+   </div>
+   <div class="line">
+    __________________________________
+    </div>
+   <div id="form">
+   <div class="gap">
+      <label class="p">Date:</label>
+      <span id="first-info">14-Feb-2024</span>
+   </div>
+   <div class="gap">
+      <label class="p">
+      Time:</label><span id="second-info">12:00 PM</span>
+   </div>
+   <div class="gap">
+      <label class="p">
+        Reference:</label><span id="third-info">66428920133</span>
+   </div>
+   <div class="gap">
+     <label class="p">
+      Amount:</label><span id="four-info">1000.00 </span><span>NGN</span>
+      </div>
+      <div class="gap">
+     <label class="p">
+       Status:</label><span> SUCCESSFUL</span>
+     </div>
+     <div class="gap">
+     <label class="p">
+       Type:</label><span>Debit</span>
+     </div>
+    </div>
+   <div class="td">
+     Accounts Details :-
+    </div>
+    <div class="line">
+       __________________________________
+    </div>
+    <div class="container">
+      <div class="gap">
+      <label class="p">
+     Sender Name:</label>
+      <span id="five-info">Dee Jay</span>
+      </div>
+   <div class="gap">
+    <label class="p">
+     Sender Account Number:</label>
+     <span id="six-info">******55324</span>
+   </div>
+   <div class="gap">
+     <label class="p">
+     Receiver Name:</label>
+     <span id="seven-info">Dee Jay</span>
+   </div>
+   <div class="gap">
+     <label class="p">
+     Receiver Account Number:</label>
+     <span id="eight-info">12345678901</span>
+   </div>
+   <div class="gap">
+     <label class="p">
+     Receiving Bank:</label>
+     <span id="nine-info">Access Bank Plc</span>
+   </div>
+   <div class="gap">
+     <label class="p">
+     Narration:</label>
+     <span id="ten-info">Bills</span>
+   </div>
+  </div>
+  
+  
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+  const nineInfo = localStorage.getItem('nine-info');
+  const tenInfo = localStorage.getItem('ten-info');  
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+  document.getElementById('nine-info').textContent = nineInfo;
+  document.getElementById('ten-info').textContent = tenInfo; 
+  </script>
+</body>
+
+</html>

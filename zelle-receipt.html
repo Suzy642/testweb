@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body{
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    @media(min-width : 400px){
+      body {
+        width: 300px;
+      }
+    }
+    img {
+      width: 100px;
+      margin-left: 80px;
+    }
+    .send {
+      margin-left: 80px;
+      margin-top: 6px;
+      font-weight: bolder;
+    }
+    .put {
+      color: black;
+      font-weight: bolder;
+    }
+    .to {
+      margin-top: 10px;
+      margin-left: 120px;
+      color: gray;
+      font-size: 12px;
+    }
+    .put2 {
+      margin-top: 15px;
+      color: black;
+      font-weight: bolder;
+      border: none;
+      margin-right: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .put3 {
+      margin-top: 15px;
+      color: black;
+      font-weight: bolder;
+      border: none;
+      margin-left: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .payment-sent {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      color: gray;
+      font-size: 12px;
+      margin-left: 90px;
+    }
+    .from {
+      color: gray;
+      font-size: 12px;
+      margin-left: 110px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .line {
+      color: lightgray;
+    }
+    .investing {
+      font-size: 9px;
+      margin-top: 10px;
+    }
+    .boa {
+      font-size: 8px;
+      color: gray;
+      margin-top: 10px;
+    }
+    .footer {
+      margin-top: 10px;
+      border-top: 1px solid #B4B4B4;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: white;
+    }
+    .bt-done {
+      margin-left: 120px;
+      color: white;
+      background-color: blue;
+      border-radius: 5px;
+      border: none;
+     padding: 5px 20px 5px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-sent">
+    Payment sent
+  </div>
+<img src="logos/mark.png">
+<div class="send">Sent
+<span class="put">&dollar;</span><span class="put" id="first-info">1,000.00</span>
+</div>
+<div class="to">to</div>
+<div>
+  <center class="put2" id="second-info">Dee Jay</center>
+</div>
+<div class="from">
+  from
+</div>
+<div>
+  <span class="put3" id="third-info">Adv plus Banking - 1747</span>
+</div>
+<div class="line">
+  ____________________________________
+</div>
+<div class="investing">
+Investing involves risk. There is always the potential of losing <br> money when you invest in securities. Asset allocation,<br> diversification, and rebalancing do not ensure a profit or protect<br> against loss in declining markets
+</div>
+<div class="boa">
+  Bank of America Merrill, their affiliates and advisors do not provide <br> legal,  tax or accounting advice. Clients should consult their legal <br> and/or tax advisors before making any financial decisions.
+</div>
+  <div class="footer">
+    <button class="bt-done">
+      Done
+    </button>
+  </div>
+
+ <script>
+const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    zelle2 payment
+  </title>
+  <style>
+  body {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    padding-left: 20px;
+  }
+  .confirm {
+    position: fixed;
+    padding: 20px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: gray;
+    background-color: #E0E0E0;
+  }
+  .word {
+    margin-left: 70px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .mark {
+    width: 90px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+  .we {
+    color: gray;
+    font-weight: bolder;
+    font-size: 9px;
+    margin-left: 10px;
+  }
+  .name {
+    width: 150px;
+    border: none;
+    font-size: 9px;
+    font-weight: bolder;
+    color: gray;
+  }
+  .name::placeholder {
+    font-size: 9px;
+    font-weight: bolder;
+    color: gray;
+  }
+  .will-get {
+    color: gray;
+    font-size: 9px;
+    font-weight: bolder;
+    margin-left: 40px;
+  }
+  .amount {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+  }
+  .amount2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+  }
+  .amount::placeholder {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+  }
+  .cover {
+    padding: 10px;
+    width: 20px;
+    border-radius: 70px;
+    background-color: #787878;
+    color: white;
+    font-weight: bolder;
+    margin-left: 80px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .cover::placeholder {
+    color: white;
+  }
+  .receiver-cover  {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .receiver {
+    color: gray;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-left: 80px;
+    border: none;
+  }
+  .z {
+    color: #8323E5;
+    background-color: white;
+    padding: 3px;
+    border-radius: 50px;
+    font-size: 8px;
+    font-weight: bolder;
+    position: absolute;
+    left: 110px;
+    top: 21px;
+  }
+  .register {
+    font-weight: bold;
+    font-size: 9px;
+    color: gray;
+    margin-left: 60px;
+  }
+  .receiver2 {
+    color: gray;
+    font-size: 9px;
+    font-weight: bold;
+    border: none;
+  }
+  .receiver2::placeholder {
+  color: gray;
+  font-size: 9px;
+  font-weight: bold;
+}
+ .email {
+   color: gray;
+   font-size: 9px;
+   font-weight: bold;
+   margin-left: 60px;
+   border: none;
+ }
+ .add {
+   color: gray;
+   font-size: 9px;
+   font-weight: bold;
+   margin-top: 30px;
+   margin-left: -20px;
+ }
+ .done {
+   width: 80px;
+   color: white;
+   background-color: #0083FF;
+   margin-top: 70px;
+   padding: 5px 80px 5px 80px;
+   border-radius: 5px;
+   margin-left: -10px;
+ }
+ .type {
+   margin-left: 20px;
+   font-weight: bolder;
+   font-size: 10px;
+ }
+  </style>
+</head>
+<body>
+<div class="confirm">
+ <span class="word"> Confirmation </span>
+</div>
+  <img class="mark" src="logos/mark.png">
+  <div class="we">
+    we're sending your money now. <span class="name" id="first-info">dee jay</span>
+  </div>
+  <div class="will-get">
+    will get it in a few minutes.
+  </div>
+  <span class="amount">$</span><span class="amount2" id="second-info">1,000.00</span>
+  <div class="receiver-cover">
+  <span class="cover" id="first-info">DJ</span>
+  <div class="z">Z</div>
+  </div>
+   <span class="receiver" id="first-info">Dee Jay</span>
+  <div class="register">
+    Registered as <span class="receiver2" id="first-info">Dee Jay</span>
+  </div>
+    <span class="email" id="six-info">myemail@gmail.com
+    <div class="done">
+      <span class="type">
+       Done
+       </span>
+    </div>
+  
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const sixInfo = localStorage.getItem('six-info');
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+
+  </script>
+</body>
+</html>

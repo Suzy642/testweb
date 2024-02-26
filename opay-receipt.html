@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    opay transfer
+  </title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-right: 0px;
+      width: 300px;
+    }
+    @media (min-width: 400px){
+      body {
+        width: 300px;
+      }
+    }
+    .head {
+      display: grid;
+      grid-template-columns: 150px 180px;
+    }
+    .first {
+      width: 100px;
+    }
+    .tran-font {
+      font-size: 12px;
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+    .tse {
+      margin-left: 90px;
+    }
+    .naira {
+      color: #12AA21;
+      font-size: 23px;
+    }
+    .amount {
+      font-weight: bold;
+      font-size: 22px;
+      width: 140px;
+      border: none;
+      color: #12AA21;
+      background-color: transparent;
+      margin-bottom: 10px;
+    }
+    .suc {
+      margin-left: 110px;
+    }
+    .put {
+      color: gray;
+      margin-left: 100px;
+      font-size: 8px;
+      border: none;
+    }
+    .line {
+      color: lightgray;
+      margin-left: 12px;
+      margin-top: -5px;
+    }
+    .line2 {
+      color: lightgray;
+      margin-left: 30px;
+      margin-top: -5px;
+    }
+    .grid1 {
+      display: grid;
+      grid-template-columns: 120px 120px;
+      column-gap: 69px;
+      margin-top: 7px;
+    }
+    .grid3 {
+      display: grid;
+      grid-template-columns: 160px 130px;
+      margin-top: 12px;
+    }
+    .ttype {
+      font-size: 12px;
+      color: gray;
+      margin-left: 10px;
+      padding-top: 3px;
+    }
+    .ttypee {
+      font-size: 10px;
+      color: gray;
+      margin-left: 30px;
+      padding-top: 5px;
+    }
+    .ttypeee {
+      color: gray;
+      padding-top: 5px;
+      font-size: 10px;
+      margin-left: -40px;
+    }
+    .tbank {
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: 120px 220px;
+      column-gap: 30px;
+      margin-top: 15px;
+      text-align: top;
+    }
+    .rput {
+      font-weight: bold;
+      font-size: 13px;
+      border: none;
+      margin-top: -3px;
+      margin-right: 26px;
+    }
+    .rput2 {
+      font-weight: bold;
+      font-size: 13px;
+      color: black;
+      margin-top: -3px;
+      margin-right: 26px;
+    }
+    .racc {
+      font-size: 9px;
+      color: gray;
+    }
+    .iline {
+      color: lightgray;
+      display: inline-block;
+    }
+    .iline2 {
+      color: lightgray;
+      display: inline-block;
+      margin-left: 2px;
+    }
+    .racct2 {
+      font-size: 9px;
+      display: inline-block;
+    }
+    .racct {
+      font-size: 9px;
+      color: gray;
+      display: inline-block;
+    }
+    .op {
+      color: gray;
+      font-size: 12px;
+      margin-left: 44px;
+    }
+    .support {
+      font-size: 12px;
+      color: gray;
+      margin-left: 120px;
+      margin-top: 80px;
+    }
+    .ng-support {
+      color: green;
+      font-size: 12px;
+      margin-left: 70px;
+      border: none;
+    }
+      .end {
+        font-size: 9px;
+        font-weight: bold;
+        color: gray;
+        margin-left: 30px;
+      }
+  </style>
+</head>
+
+<body>
+<div class="head">
+  <div>
+    <img class="first" src="logos/opay.png">
+  </div>
+  <div class="tran-font">
+    Transaction Receipt
+  </div>
+</div>
+<div class="tse">
+  <span class="naira">&#8358</span>
+  <span class="amount" id="first-info">1,000.00</span>
+</div>
+<div>
+  <span class="suc">
+    SUCCESS
+  </span>
+</div>
+<div>
+  <span class="put" id="second-info">Feb 14 2024 12:00:00 PM</span>
+</div>
+<div class="line">
+  ___________________________________
+</div>
+<div class="grid1">
+  <div class="ttype">
+    Transaction Type
+  </div>
+  <div class="tbank">
+    Transfer to bank
+  </div>
+</div>
+<div class="grid2">
+  <div class="ttype">
+    Recipient Details
+  </div>
+  <div>
+    <center class="rput2" id="third-info">Dee Jay</center>
+    <span class="racc" id="four-info">Access Bank Plc</span><span class="iline2">
+      |
+    </span>
+    <span class="racct2" id="five-info">12345678901</span>
+  </div>
+</div>
+<div class="grid2">
+  <div class="ttype">
+    Sender Details
+  </div>
+  <div>
+    <center class="rput" id="six-info">Dee Jay</center>
+    <span class="op">
+      Opay
+    </span>
+    <span class="iline">
+      |
+    </span>
+    <span class="racct"  id="seven-info">12345678901</span>
+  </div>
+</div>
+<div class="grid3">
+  <div class="ttype">
+    Transaction Reference
+  </div>
+  <div class="ttypee">
+    230705024712583225
+  </div>
+</div>
+<div class="grid2">
+  <div class="ttype">
+    SessionID
+  </div>
+  <div class="ttypeee">
+    100004230705185821104952228174
+  </div>
+</div>
+<div class="support">
+  Support
+</div>
+<div>
+ <span class="ng-support">
+ng.support@opay-inc.com</span>
+</div>
+<div class="line2">
+  ______________________________
+</div>
+<div class="end">
+  Enjoy a better life with OPay. Get free transfer free,
+  withdrawals, free bills payment, instant loans and up to 15%
+  <br>interest on savings. OPay is licensed by Central Bank of Nigeria and insured by the NDIC.
+</div>
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+
+  </script>
+</body>
+
+</html>

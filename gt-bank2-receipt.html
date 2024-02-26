@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transfer</title>
+  <style>
+  body {
+    margin-top: 30px;
+  }
+  .top {
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  .firstgrid {
+    display: grid;
+   grid-template-columns: 200px 100px;
+   column-gap: 30px;
+  }
+  .receipt {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: -1px;
+  }
+  .time {
+    font-size: 8px;
+    width: 160px;
+    border: none;
+    margin-top: -5px;
+  }
+  .time::placeholder {
+    color: black;
+  }
+  .gtbimg {
+    width: 60px;
+  }
+  .amountcover {
+    margin-top: 10px;
+  }
+  .n {
+    font-size: 8px;
+    color: black;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+  .amount {
+    margin-right: -10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    border: none;
+  }
+  .amount-word {
+    font-size: 8px;
+    width: 250px;
+    border: none;
+  }
+  .complete {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 7px;
+  }
+  .cover {
+    margin-top: 12px;
+  }
+  .title {
+    font-size: 10px;
+    color: black
+  }
+  .put {
+    border: none;
+    font-size: 9px;
+    font-weight: bold;
+    width: 250px;
+  }
+  .put::placeholder {
+    color: black;
+  }
+  .remark {
+    font-weight: bolder;
+    font-size: 7px;
+  }
+  .remark2 {
+    font-weight: bolder;
+    font-size: 7px;
+    margin-top: -2px;
+  }
+  .put2 {
+    border: none;
+    font-size: 9px;
+    font-weight: bold;
+    width: 220px;
+    padding-left: 3px;
+    color: black;
+    font-size: 7px;
+  }
+  .put2::placeholder {
+    color: black;
+    font-size: 7px;
+  }
+  .line {
+    color: #8D8D8D;
+    margin-top: -4px;
+  }
+  .download-grid {
+    display: grid;
+    grid-template-columns: 120px 100px;
+    column-gap: 100px;
+  }
+  .down {
+    font-weight: bold;
+  }
+  .scan {
+    width: 80px;
+  }
+  .end-remark {
+    font-size: 5px;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div class="top">
+   
+  </div>
+<div class="firstgrid">
+  <div>
+    <p class="receipt">Receipt</p>
+    <span class="time" id="first-info">14 Feb 2024, 12:00 PM GMT+1</span>
+  </div>
+  <div>
+    <img class="gtbimg" src="logos/gtb.png">
+  </div>
+</div>
+<div class="amountcover">
+  <span class="n">&#8358</span><span class="amount" id="second-info"> 1,000.00</span><br>
+  <span class="amount-word" id="third-info">One Thousand Naira Only</span>
+</div>
+<div class="complete">
+  Completed
+</div>
+<div class="cover">
+  <div>
+    <span class="title">
+      Sender</span><br>
+      <span class="put" id="four-info">Dee Jay</span>
+  </div>
+  <div>
+    <span class="title">Receiver</span><br>
+    <spam class="put" id="five-info">Dee Jay</span>
+  </div>
+  <div>
+    <span class="title">
+      Account number</span><br><span class="put" id="six-info">12345678901</span>
+  </div>
+  <div>
+    <span class="title"> Receiving bank</span><br><span class="put" id="seven-info">Access Bank Plc</span>
+  </div>
+  <div>
+    <span class="title">Reference number</span><br><span class="put">
+ 0000132308120945500000059959641</span>
+  </div>
+  <div>
+    <span class="title">
+      Remark
+    </span><br><span class="put" id="eight-info">Bills</span><br>
+    <span class="remark">
+      NIBSS instant payment Outward 0000132308120945500000059959641
+    </span> 
+    <div class="remark2">
+      FeedPurchase to <span class="put" id="nine-info">Access Bank Plc</span> <i>/ </i><span class="put" id="ten-info">Dee Jay</span>
+    </div>
+  </div>
+  <div class="line">
+    _____________________________________
+  </div>
+  <div class="download-grid">
+    <div class="down">
+      Download<br>
+      the new<br>
+      GTWorld app
+    </div>
+    <div>
+      <img class="scan" src="logos/scan.png">
+    </div>
+  </div>
+  <div class="end-remark">
+    Your transfer has been successful and the beneficiary's account will be credited, However this does not serve as <br> confirmation of credit to the beneficiary's account, Due to the natrue of the internet transactions maybe subject to <br> interruption
+  </div>
+</div>
+ <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+  const nineInfo = localStorage.getItem('nine-info');
+  const tenInfo = localStorage.getItem('ten-info');
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+  document.getElementById('nine-info').textContent = nineInfo;
+  document.getElementById('ten-info').textContent = tenInfo;
+
+  </script>
+</body>
+</html>

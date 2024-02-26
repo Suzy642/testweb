@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Cashapp receipt
+  </title>
+  <style>
+  body {
+    padding-top: 40px;
+   padding-bottom: 40px;
+  }
+  img {
+    width: 70px;
+  }
+  .list {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  button {
+    color: white;
+    background-color: #00D416;
+    padding: 10px 120px;
+    border: none;
+    margin-top: 270px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  </style>
+</head>
+
+<body>
+<div>
+  <img src="logos/cashgreen.png">
+</div>
+<div class="list">Sent! <span id="first-info">$1,000.00</span> will be deposited<br> once <span id="second-info">Dee Jay</span><br>completes the payment.</div>
+<button>
+  Done
+</button>
+
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+
+
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+
+  </script>
+</body>
+
+</html>

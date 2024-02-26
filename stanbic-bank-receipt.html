@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Stanbic transfer
+  </title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+      
+    }
+    @media (min-width: 400px){
+      body {
+        width: 300px;
+      }
+    }
+    .topimg {
+      width: 170px;
+    }
+    .sbody {
+     margin-top: -20px;
+     margin-left: 20px;
+    }
+    .head {
+      margin-left: 110px;
+      font-weight: bold;
+      margin-bottom: -1px;
+    }
+    .tbody {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding-right: -15px;
+      padding-left: 15px;
+    }
+    .mark {
+      width: 40px;
+      margin-left: 100px;
+      margin-top: 1px;
+    }
+    .tran {
+      font-size: 12px;
+      color: gray;
+      margin-left: 60px;
+    }
+    .insert {
+      color: gray;
+      border: none;
+      margin-left: 70px;
+      width: 100px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .insert2 {
+      color: gray;
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+      margin-left: 70px;
+      width: 210px;
+    }
+    .insert3 {
+      width: 140px;
+      color: gray;
+      border: none;
+      font-weight: bold;
+      margin-left: 30px;
+      font-size: 12px;
+    }
+    .insert4 {
+      width: 100px;
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+      color: gray;
+    }
+    .line {
+      color: lightgray;
+      margin-left: 1px;
+    }
+    .tt {
+      color: gray;
+      font-size: 11px;
+      margin-left: 80px;
+    }
+    .insert5 {
+      font-weight: bold;
+      font-size: 12px;
+      color: gray;
+      border: none;
+      width: 150px;
+      margin-left: 60px;
+    }
+    .tran2 {
+      color: gray;
+      font-size: 11px;
+      margin-left: 110px;
+    }
+    .insert6 {
+      font-size: 12px;
+      color: gray;
+      width: 120px;
+      margin-left: 80px;
+      border: none;
+      font-weight: bold;
+    }
+    .tran3 {
+      color: gray;
+      font-size: 11px;
+      margin-left: 90px;
+    }
+    .tran4 {
+      color: gray;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 90px;
+      margin-top: 5px;
+    }
+    .tran5 {
+      color: gray;
+      font-size: 11px;
+      margin-left: 110px;
+    }
+    .tran6 {
+      color: gray;
+      font-size: 11px;
+      margin-left: 100px;
+    }
+    .insert7 {
+      border: none;
+      font-weight: bold;
+      font-size: 12px;
+      color: gray;
+      margin-left: 80px;
+      width: 150px;
+      padding-left: 10px;
+    }
+    .insert8 {
+      font-weight: bold;
+      font-size: 12px;
+      color: gray;
+      margin-left: -20px;
+      padding-left: 10px;
+    }
+    .foot {
+      border: 2px solid lightgray;
+      margin-top: 20px;
+    }
+    .dis {
+      margin-top: 2px;
+      margin-left: 120px;
+      margin-right: 20px;
+      margin-bottom: -2px;
+    }
+    .g {
+      color: gray;
+      font-size: 9px;
+      margin-left: 3px;
+    }
+    .ff {
+      margin-left: 70px;
+      margin-top: 20px;
+    }
+    button {
+      background-color: blue;
+      color: white;
+      padding: 15px 15px;
+      border: none;
+      margin-right: 30px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img class="topimg" src="logos/stanbic.png">
+  </div>
+  <div class="sbody">
+    <h5 class="head">
+      Receipt
+    </h5>
+    <div class="tbody">
+      <div>
+        <img class="mark" src="logos/mark2.png">
+      </div>
+      <div>
+        <span class="tran">Transaction Successful</span>
+      </div>
+      <div>
+        <span class="insert" id="first-info">NGN 1,000.00</span>
+      </div>
+      <div>
+        <span class="insert2" id="second-info">Dee Jay</span>
+      </div>
+      <div>
+        <span class="insert3" id="third-info">Access Bank Plc</span>-
+        <span class="insert4" id="four-info">12345678901</span>
+      </div>
+      <div class="line">
+        _______________________________
+      </div>
+      <div class="tt">
+        Transaction Type
+      </div>
+      <div>
+        <span class="insert5"   id="five-info">ONE OFF PAYMENT</span>
+      </div>
+      <div class="tran2">
+        From
+      </div>
+      <div>
+        <span class="insert6" id="six-info">12345678901</span>
+      </div>
+      <div class="tran3">
+        Reference ID
+      </div>
+      <div class="tran4" id="seven-info">
+        60863950
+      </div>
+      <div class="tran5">
+        Date
+      </div>
+      <div>
+        <span class="insert7" id="eight-info">14/02/2024</span>
+      </div>
+      <div class="tran6">
+        Narration
+      </div>
+      <div>
+        <center class="insert8" id="nine-info">Bills</center>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <h6 class="dis">
+      Disclaimer
+    </h6>
+    <div class="g">
+      Any confirmation of a transaction must not be constructed as a confirmation of credir into beneficiary's account.<br> Due to the nature of internet transactions may be subjected to interruption, transmission blockout, delayed transmission and incorrect data transmission.
+      <br>The bank is not liable for malfunction in communication facilities not with it's control that may affect the accuracy of timeline of messages and transactions you send.<br>All transactions are subject to our verification and our normal fraud checks
+    </div>
+  </div>
+  <div class="ff">
+    <button>
+      send
+    </button> 
+    <button>
+      save
+    </button>
+  </div>
+
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+ const nineInfo = localStorage.getItem('nine-info');
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+  document.getElementById('nine-info').textContent = nineInfo;
+
+  </script>
+</body>
+
+</html>

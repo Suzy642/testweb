@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Transfer
+  </title>
+  <style>
+  body {
+    padding-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+    .firstb {
+      width: 100px;
+      margin-left: 110px;
+    }
+    .trans {
+      margin-top: -3px;
+      color: #22296C;
+      margin-left: 110px;
+    }
+    .end {
+      color: #22296C;
+      font-weight: bolder;
+      font-size: 10px;
+      margin-left: 90px;
+      margin-top: 2px;
+    }
+    .di {
+      margin-top: -40px;
+      color: orange;
+      padding-left: 5px;
+    }
+    .din {
+      color: orange;
+      margin-top: 25px;
+      padding-left: 5px;
+    }
+    .fun {
+      color: #22296C;
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 15px;
+      padding-left: 15px;
+    }
+    .input {
+      color: gray;
+      font-size: 10px;
+      margin-left: 5px;
+ 
+    }
+    .bimg {
+      position: relative;
+    }
+    .bimg::before {
+      content:"";
+      position: absolute;
+      left:0;
+      top:0;
+      background-image: url("logos/first.png");
+      background-size: cover;
+      opacity: 0.2;
+    }
+    .dd {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bimg">
+    <img class="firstb" src="logos/first.png">
+    <h6 class="trans">
+    Transaction Receipt 
+    </h6>
+    <div class="di">
+    ______________________________________
+    </div>
+    <div class="dd">
+      <label class="fun">
+     Transaction Date:</label>
+    <span class="input" id="first-info">Wed, Feb 14 12:00:00 WAT 2024</span>
+    </div>
+    <div class="dd">
+      <label class="fun">Transaction Type:</label><span class="input">Local Transfer</span>
+    </div>
+    <div class="dd"><label class="fun">
+      Amount:</label><span class="input" id="second-info">1,000.00</span>
+    </div>
+    <div class="dd"><label class="fun">
+      Source Account:</label><span class="input" id="third-info">1234****901</span>
+    </div>
+    <div class="dd">
+      <label class="fun">
+      Source Account Name:</label><span class="input" id="four-info">Dee Jay</span>
+    </div>
+    <div class="dd">
+      <label class="fun">
+      Beneficiary Account number:</label><span class="input" id="five-info">12345678901</span>
+    </div>
+    <div class="dd">
+      <label class="fun">
+     Beneficiary Name:</label><span class="input" id="six-info">Dee Jay</span>
+    </div>
+    <div class="dd">
+      <label class="fun">
+      Bank:</label><span class="input" id="seven-info">Access Bank Plc</span>
+    </div>
+    <div class="dd">
+      <label class="fun">
+      Narration:</label><span class="input" id="eight-info">Bills</span>
+    </div>
+    <div class="din">
+      ______________________________________
+    </div>
+    <h6 class="end">
+      Generated from FirstMobile
+    </h6>
+ </div>
+  <script>
+  
+  const firstInfo = localStorage.getItem('first-info');
+  const secondInfo = localStorage.getItem('second-info');
+  const thirdInfo = localStorage.getItem('third-info');
+  const fourInfo = localStorage.getItem('four-info');
+  const fiveInfo = localStorage.getItem('five-info');
+  const sixInfo = localStorage.getItem('six-info');
+  const sevenInfo = localStorage.getItem('seven-info');
+  const eightInfo = localStorage.getItem('eight-info');
+ 
+  
+  document.getElementById('first-info').textContent = firstInfo;
+  document.getElementById('second-info').textContent = secondInfo;
+  document.getElementById('third-info').textContent = thirdInfo;
+  document.getElementById('four-info').textContent = fourInfo;
+  document.getElementById('five-info').textContent = fiveInfo;
+  document.getElementById('six-info').textContent = sixInfo;
+  document.getElementById('seven-info').textContent = sevenInfo;
+  document.getElementById('eight-info').textContent = eightInfo;
+
+  </script>
+</body>
+</html>
